@@ -1,23 +1,48 @@
-<!DOCTYPE html>
-<!-- https://www.w3schools.com/php/php_file_upload.asp -->
+<!-- Loosely based on https://www.w3schools.com/php/php_file_upload.asp -->
 <html>
 <head>
-    <title>Store form data in .txt file</title>
+    <title>Upload your manifest</title>
   
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 <body class="">
     <div class="container center-align section">
-    <img src="img/okh-logo.svg">
-    <form class="center-align" action="upload.php" method="post" enctype="multipart/form-data">
-      Select image to upload:
-      <input type="file" name="fileToUpload" id="fileToUpload">
-      <input type="submit" value="Upload manifest" name="submit">
+        <h1>1. Upload the manifest</h1>
+        <img src="img/okh-logo.svg">
+        <form class="center-align" action="upload.php" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <div class="row">
+            <h1>2. Evaluate from 1 to 5</h1>
+                <div class="input-field col s12 m4 offset-m4">
+                    <label for="eval1">Is it easy to make?</label>
+                    <input required type="number" min="0" max="10" name="eval1" id="eval1" class="validate">
+                </div>
+                <div class="input-field col s12 m4 offset-m4">
+                    <input required type="number" min="0" max="10" name="eval2" id="eval2" class="validate">
+                    <label for="eval2">Is it easy to make?</label>
+                </div>
+                <div class="input-field col s12 m4 offset-m4">
+                    <input required type="number" min="0" max="10" name="eval3" id="eval3" class="validate">
+                    <label for="eval3">Is it easy to make?</label>
+                </div>
+                <div class="input-field col s12 m4 offset-m4">
+                    <input required type="number" min="0" max="10" name="eval4" id="eval4" class="validate">
+                    <label for="eval4">Is it easy to make?</label>
+                </div>
+                <div class="input-field col s12 m4 offset-m4">
+                    <input required type="number" min="0" max="10" name="eval5" id="eval5" class="validate">
+                    <label for="eval5">Is it easy to make?</label>
+                </div>
+            </div>
+            
+      <input type="submit" value="Submit" name="submit">
     </form>
     </div>
 </body>

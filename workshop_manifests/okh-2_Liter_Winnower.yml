@@ -1,0 +1,37 @@
+# Open know-how manifest v0.1
+---
+date-created: 2020-03-25
+date-updated: 2020-03-28
+manifest-author:
+  name: Kathy Nativi
+  affiliation: Appropedia
+  email: info@appropedia.org
+manifest-language: eng-us
+documentation-language: eng
+
+# Properties
+title: 2 Liter Winnower
+description: |
+  Winnowing is a process to remove lighter particles of chaff, dirt, etc from grain and other products typically by throwing it into the air and blowing air on it.
+
+intended-use: |
+  deployment, industry
+keywords: 
+  - food and agriculture
+  - health
+contact:
+  name: Medley Inc
+image: https://appropedia.org/images/c/cd/2-literwinnowerrender.JPG
+made: TRUE
+license:
+  documentation: CC-BY-SA 3.0
+
+# Documentation
+documentation-home: https://www.appropedia.org/2_Liter_Winnower
+
+# Appropedia-specific fields
+date-published: 2018-12-07
+sustainable-development-goals: 
+  - SDG 09: Industry, innovation and infrastructure
+  - SDG 11: Sustainable cities and communities
+  - SDG 12: Responsible consumption and production

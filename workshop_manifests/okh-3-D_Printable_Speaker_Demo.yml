@@ -1,0 +1,35 @@
+# Open know-how manifest v0.1
+---
+date-created: 2020-03-25
+date-updated: 2020-03-28
+manifest-author:
+  name: Kathy Nativi
+  affiliation: Appropedia
+  email: info@appropedia.org
+manifest-language: eng-us
+documentation-language: eng
+
+# Properties
+title: 3-D Printable Speaker Demo
+description: |
+  This page contains the instructions and files necessary to 3D-print a loudspeaker. 
+intended-use: |
+  deployment, industry
+keywords: 
+  - education
+contact:
+  name: Brhubbar
+  affiliation: MTU
+image: https://appropedia.org/images/5/57/3-D_Printed_Speaker_Enclosure.JPG
+made: FALSE
+license:
+  documentation: CC-BY-SA 3.0
+
+# Documentation
+documentation-home: https://www.appropedia.org/3-D_Printable_Speaker_Demo
+
+# Appropedia-specific fields
+date-published: 2019-12-12
+sustainable-development-goals: 
+  - SDG 08: Decent work and economic growth
+  - SDG 12: Responsible consumption and production
