@@ -109,7 +109,7 @@ for (i in 1:nrow(manifest_titles)) {
 manifest_single_keywords <- drop_na(manifest_single_keywords)
 manifest_single_keywords$keyword <- tolower(manifest_single_keywords$keyword)
 
-# Join a list of item ids (keywords and titles) and keyword use count.
+## Join a list of item ids (keywords and titles) and keyword use count.
 manifest_links <- left_join(manifest_single_keywords, all_nodes) %>% 
   mutate(item1=number, name=title) %>% 
   select(-number, -title)
@@ -117,7 +117,7 @@ manifest_links <-
   left_join(manifest_links %>% select(-group), all_nodes, by=c("keyword"="title")) %>% 
   mutate(item2=number) %>% 
   select(-number)
-# We're multiplying `n` just to make it easier to see.
+## We're multiplying `n` just to make it easier to see.
 manifest_links <- left_join(manifest_links, keyword_count) %>% 
   mutate(n=n+2*2)
 
@@ -133,24 +133,31 @@ values <- left_join(evals, new_filenames) %>% select(-old) %>%
   select(title, value)
 
 # Pair every node with its score.
+
 ## Keywords don't have a value here (it's shown as line weight)
 ## So we'll give them a default value of 5.
 all_values <- left_join(all_nodes, values)
 all_values$value[is.na(all_values$value)] <- 5
+## Add exponentiality just for sake of visualizing better.
+all_values <- all_values %>% mutate(x_value=case_when(group==2 ~5, TRUE ~ 1.6^value))
 
 # Draw the diagram!
+
+## Adding a color scale.
 ColourScale <- 'd3.scaleOrdinal()
             .domain(["lions", "tigers"])
            .range(["#0072ff", "#694489"]);'
 
+## Graph is possible thanks to the beautiful NetworkD3 package.
+## https://christophergandrud.github.io/networkD3/
 network <- forceNetwork(
   Links=manifest_links %>% select(item1, item2, n), 
-  Nodes=all_values %>% select(title,group,value), 
+  Nodes=all_values %>% select(title,group,x_value), 
   Source="item1", 
   Target="item2", 
   Value="n", 
   NodeID="title", 
-  Nodesize="value", 
+  Nodesize="x_value", 
   radiusCalculation="d.nodesize", 
   opacity=1, 
   Group="group",
@@ -162,5 +169,5 @@ network <- forceNetwork(
   )
 network
 
-#Save as a webpage.
+## Save graph as a webpage.
 network %>% saveNetwork(file = paste0(new_path, "../script/graph-output.html"))
