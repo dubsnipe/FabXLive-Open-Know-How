@@ -6,17 +6,28 @@ The COVID-19 pandemic was addressed by a surge of open source projects made by m
 
 ## Procedure
 
-
 1. Introduction
 2. Category selection
 3. Projects evaluation
 4. Discussion and feedback
 
+## What's on this documentation?
+- Workshop slides (coming soon).
+- The code used to upload manifests.
+- 
+
+## Links for the workshop
+- [Manifest Maker Form (Powered by Makernet.org)](https://okh.makernet.org/form)
+- 
+
+## Learn more
+- Open Know-How Standard: [Website](https://openknowhow.org/) | [Documentation](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
+
 
 ## Presenters
 
-Andrew Lamb
+Andrew Lamb: Andrew is a Shuttleworth Foundation fellow exploring the concept of ‘Massive Small Manufacturing’. He is the Global Innovation Lead for Field Ready, an international humanitarian organisation that manufactures aid supplies in the field. He is also the chair of the Internet of Production Alliance, and the Open Know-How group which is developing an open data standard for the documentation of hardware designs. Andrew’s work focuses on enabling the local production of aid supplies at scale by infrastructure, techniques and partnerships with large international aid organisations and UN agencies.
 
-Emilio Velis
+Emilio Velis: Emilio is an industrial engineer based in San Salvador. He received the MIT Technology Review Innovators Under 35 Award in 2015 for Reacción, an open hardware initiative for social and environmental resilience. He serves as part of the local and regional leadership for the Latin American Fab Lab Network, Internet Society, the Open Hardware Association and Creative Commons. For the past years, he had experience at Habitat for Humanity and Techo, focusing on poverty alleviation through volunteer management and resource development. Emilio is currently the Executive Director of the Appropedia Foundation.
 
 Adriana Cabrera
