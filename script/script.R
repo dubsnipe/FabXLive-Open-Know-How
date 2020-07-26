@@ -139,7 +139,7 @@ values <- left_join(evals, new_filenames) %>% select(-old) %>%
 all_values <- left_join(all_nodes, values)
 all_values$value[is.na(all_values$value)] <- 5
 ## Add exponentiality just for sake of visualizing better.
-all_values <- all_values %>% mutate(x_value=case_when(group==2 ~5, TRUE ~ 1.6^value))
+all_values <- all_values %>% mutate(x_value=case_when(group==2 ~5, TRUE ~ 1.8^value))
 
 # Draw the diagram!
 
