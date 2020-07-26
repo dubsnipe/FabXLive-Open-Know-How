@@ -62,6 +62,21 @@ for(i in 1:nrow(new_filenames)){
 ## Check that we haven't really used descriptions in this exercise yet, but they could be!
 title <- NA
 manifest_titles <- tibble(title = lapply(yaml_list, with, title) %>% unlist)
+unique_titles <- unique(manifest_titles$title)
+manifest_titles <- unique_titles
+
+
+## Remove from `yaml_list` all repeated elements
+if (length(yaml_list) != length(unique_titles)){
+  for(i in 1:length(yaml_list)){
+    if(yaml_list[[i]]$title %in% unique_titles){
+      unique_titles <- unique_titles[-which(unique_titles %in% yaml_list[[i]]$title)]
+    } else {
+      yaml_list[[i]] <- NULL
+    }
+  }
+}
+
 description <- NA
 manifest_descriptions <- tibble(description = lapply(yaml_list, with, description) %>% unlist)
 keywords <- NA
@@ -71,7 +86,7 @@ manifest_keywords <- sapply(yaml_list, with, keywords)
 # Give an id to all titles.
 ## Notice that they're in group 1. Keywords will be in group 2
 ## In order to render them in different colors on the graph.
-all_titles <- bind_cols(title=manifest_titles,number=seq(1:nrow(manifest_titles)))
+all_titles <- bind_cols(title=manifest_titles,number=seq(1:length(manifest_titles)))
 all_titles$group <- 1
 
 title_rows <- nrow(all_titles)
@@ -93,21 +108,22 @@ all_keywords <- bind_cols(
   )
 all_keywords$group <- 2
 
+
 # Make a general list of all nodes (device titles and keywords).
 all_nodes <- bind_rows(all_titles, all_keywords)
 all_nodes <- all_nodes %>% mutate(number=number-1) %>% drop_na()
 
 
-# Make a table with paired keywords and projects.
+## Testing alternative way
 manifest_single_keywords <- tibble(title=character(), keyword=character())
-for (i in 1:nrow(manifest_titles)) { 
-  x <- tibble(title=as.character(manifest_titles[i,]), 
-              keyword=manifest_keywords[[i]]
-              ) %>% unnest(keyword)
-  manifest_single_keywords <- bind_rows(manifest_single_keywords, x)
+for (i in 1:length(manifest_titles)) { 
+  manifest_single_keywords <- bind_rows(manifest_single_keywords, 
+                                        bind_cols(title=manifest_titles[i],
+                                                  keyword=yaml_list[[i]]$keywords))
 }
 manifest_single_keywords <- drop_na(manifest_single_keywords)
 manifest_single_keywords$keyword <- tolower(manifest_single_keywords$keyword)
+
 
 ## Join a list of item ids (keywords and titles) and keyword use count.
 manifest_links <- left_join(manifest_single_keywords, all_nodes) %>% 
@@ -139,7 +155,13 @@ values <- left_join(evals, new_filenames) %>% select(-old) %>%
 all_values <- left_join(all_nodes, values)
 all_values$value[is.na(all_values$value)] <- 5
 ## Add exponentiality just for sake of visualizing better.
-all_values <- all_values %>% mutate(x_value=case_when(group==2 ~5, TRUE ~ 1.8^value))
+all_values <- all_values %>% 
+  mutate(x_value=case_when(group==2 ~5, TRUE ~ (value^1.4)))
+
+
+## Make sure to eliminate projects without keywords.
+`%notin%` <- Negate(`%in%`)
+all_values %>% filter(keywords %notin% manifest_links$keyword)
 
 # Draw the diagram!
 
@@ -159,11 +181,11 @@ network <- forceNetwork(
   NodeID="title", 
   Nodesize="x_value", 
   radiusCalculation="d.nodesize", 
-  opacity=1, 
   Group="group",
-  zoom = TRUE,
-  colourScale = JS(ColourScale),
+  opacity=1, 
+  zoom = T,
   fontFamily = "League Mono",
+  colourScale = JS(ColourScale),
   linkDistance = 
     JS('function(){d3.select("body").style("background-color", "#9fd2f9"); return 50;}')
   )
