@@ -4,7 +4,7 @@
 // https://www.w3schools.com/php/php_file_upload.asp
 
 $target_dir = "manifests/";
-$target_file = $target_dir . date('His') . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir . date('Hisv') . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
