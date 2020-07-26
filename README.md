@@ -8,7 +8,6 @@ This is the workshop documentation for the 2020 FabXlive event.
 - [What is on this repo?](#what-is-here)
 - [Workshop instructions](#workshop-instructions)
 - [tl;dr Links](#tldr-links-you-will-use)
-- [Learn more](#learn-more)
 - [About the facilitators](#about-the-facilitators)
 
 ## Description
@@ -72,4 +71,4 @@ After we're done, we will answer questions and then we'll show you the results.
 
 * Emilio Velis: Emilio is an industrial engineer based in San Salvador. He received the MIT Technology Review Innovators Under 35 Award in 2015 for Reacción, an open hardware initiative for social and environmental resilience. He serves as part of the local and regional leadership for the Latin American Fab Lab Network, Internet Society, the Open Hardware Association and Creative Commons. For the past years, he had experience at Habitat for Humanity and Techo, focusing on poverty alleviation through volunteer management and resource development. Emilio is currently the Executive Director of the Appropedia Foundation.
 
-Adriana Cabrera
+* Adriana Cabrera
