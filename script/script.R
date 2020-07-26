@@ -161,7 +161,9 @@ all_values <- all_values %>%
 
 ## Make sure to eliminate projects without keywords.
 `%notin%` <- Negate(`%in%`)
-all_values %>% filter(keywords %notin% manifest_links$keyword)
+all_values <- all_values %>% 
+  filter(keywords %notin% manifest_links$keyword) %>% 
+  mutate(label=case_when(group==1 ~ paste0(title, " (", round(value,2), ")"), TRUE ~ title))
 
 # Draw the diagram!
 
@@ -174,11 +176,11 @@ ColourScale <- 'd3.scaleOrdinal()
 ## https://christophergandrud.github.io/networkD3/
 network <- forceNetwork(
   Links=manifest_links %>% select(item1, item2, n), 
-  Nodes=all_values %>% select(title,group,x_value), 
+  Nodes=all_values %>% select(label,group,x_value), 
   Source="item1", 
   Target="item2", 
   Value="n", 
-  NodeID="title", 
+  NodeID="label", 
   Nodesize="x_value", 
   radiusCalculation="d.nodesize", 
   Group="group",
