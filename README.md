@@ -44,15 +44,22 @@ Check if it's licensed. If not, you can leave this blank. Check https://spdx.org
 Your name and email will suffice.
 
 ### Download the manifest
-![Donwload button](Screenshot_2020-07-25 IOP Common DB.png)
+![Donwload button](img/DB.png)
 
 After you're done making the manifest, press "Download" and save it to your computer. You should have a file named okh.yml (you can rename it if you want).
 
 ### Upload the manifest and fill out an evaluation
-Go to [this link](https://emiliovelis.com/okh/). Select the manifest file and evaluate the project (input a number from 1 to 10) for the following questions:
-- How effective do you believe it is?
-- Is it possible to 
+Go to [this link](https://emiliovelis.com/okh/). Select the manifest file and evaluate the project (input a number from 0 to 10) for the following questions:
+1. How effective do you believe it is? (0=not at all; 10=super effective)
+2. How expensive is it? (0=too expensive; 10=very affordable)
+3. Would it be easy to find its materials? (0=not easy; 10=very easy)
+4. How easy is it to fabricate?  (0=too difficult; 10=very easy)
+5. How durable does it look? (0=not durable or disposable; 10=it looks very durable)
 
+Press "Submit" after you're done.
+
+### That's it! 
+After we're done, we will answer questions and then we'll show you the results.
 
 ## tl;dr Links You Will Use
 - [Manifest Maker Form (Powered by Makernet.org)](https://okh.makernet.org/form)
@@ -60,7 +67,6 @@ Go to [this link](https://emiliovelis.com/okh/). Select the manifest file and ev
 
 ## Learn More
 - Open Know-How: [Website](https://openknowhow.org/)
-
 
 ## About the Facilitators
 
