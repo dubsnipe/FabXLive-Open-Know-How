@@ -1,4 +1,6 @@
-# okh-covid19
+# Using the Open Know-How Standard for evaluating COVID-19  medical projects
+![Workshop banner](img/9.png)
+
 This is the workshop documentation for the 2020 FabXlive event.
 
 ## Description
@@ -13,10 +15,10 @@ The COVID-19 pandemic was addressed by a surge of open source projects made by m
 
 ## What's on this documentation?
 - Workshop slides (coming soon).
-- The code used to upload manifests.
-- 
+- The PHP code used to upload manifests.
+- A script to 
 
-## Links for the workshop
+## Links you will need for this workshop
 - [Manifest Maker Form (Powered by Makernet.org)](https://okh.makernet.org/form)
 - 
 
