@@ -43,7 +43,7 @@ Check if it's licensed. If not, you can leave this blank. Check https://spdx.org
 Your name and email will suffice.
 
 ### Download the manifest
-![Donwload](img/DB.png)
+![Donwload](img/DB.png?raw=true)
 
 After you're done making the manifest, press "Download" and save it to your computer. You should have a file named okh.yml (you can rename it if you want).
 
