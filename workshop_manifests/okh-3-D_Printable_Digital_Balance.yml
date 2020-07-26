@@ -1,0 +1,28 @@
+# Open know-how manifest v0.1
+---
+date-created: 2020-03-25
+date-updated: 2020-03-28
+manifest-author:
+  name: Kathy Nativi
+  affiliation: Appropedia
+  email: info@appropedia.org
+manifest-language: eng-us
+documentation-language: eng
+
+# Properties
+title: 3-D Printable Digital Balance
+description: |
+  This OSAT is a digital mass balance with two outputs: Digital output for data logging capabilities, and an LCD display. keywords:    - education    - 3d printing    - agriculture    
+contact:
+  name: Brhubbar
+  affiliation: MTU
+image: https://appropedia.org/images/a/a7/OS_Nano_Balance_mark1.JPG
+made: FALSE
+license:
+  documentation: CC-BY-SA 3.0
+
+# Documentation
+documentation-home: https://www.appropedia.org/3-D_Printable_Digital_Balance
+
+# Appropedia-specific fields
+date-published: 2019-10-31

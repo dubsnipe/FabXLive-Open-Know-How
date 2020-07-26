@@ -1,4 +1,3 @@
-# require(tidyverse)
 require(tibble)
 require(dplyr)
 require(xml2)
@@ -144,9 +143,10 @@ evals <- read.csv(url("https://emiliovelis.com/okh/eval.csv"), header=T)
 weights <- c(.3, .2, .25, .1, .15)
 values <- left_join(evals, new_filenames) %>% select(-old) %>% 
   mutate(value=q1*weights[1]+q2*weights[2]+q3*weights[3]+q4*weights[4]+q5*weights[5]) %>% 
-  # Feeling cute. Might comment this line later.
-  # mutate(value=2*value) %>% 
-  select(title, value)
+  select(title, value) %>% 
+  drop_na() %>% 
+  group_by(title) %>% 
+  summarize(value=mean(value))
 
 # Pair every node with its score.
 
