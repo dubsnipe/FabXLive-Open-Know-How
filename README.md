@@ -63,10 +63,8 @@ After we're done, we will answer questions and then we'll show you the results.
 
 ## tl;dr Links You Will Use
 - [Manifest Maker Form (Powered by Makernet.org)](https://okh.makernet.org/form)
-- 
-
-## Learn More
-- Open Know-How: [Website](https://openknowhow.org/)
+- [Where you will upload and evaluate the manifest](https://emiliovelis.com/okh/)
+- Learn about Open Know-How: [Website](https://openknowhow.org/) | [Documentation](https://app.standardsrepo.com/MakerNetAlliance/OpenKnowHow/src/branch/master/1)
 
 ## About the Facilitators
 
