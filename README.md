@@ -71,4 +71,9 @@ After we're done, we will answer questions and then we'll show you the results.
 
 * Emilio Velis: Emilio is an industrial engineer based in San Salvador. He received the MIT Technology Review Innovators Under 35 Award in 2015 for Reacción, an open hardware initiative for social and environmental resilience. He serves as part of the local and regional leadership for the Latin American Fab Lab Network, Internet Society, the Open Hardware Association and Creative Commons. For the past years, he had experience at Habitat for Humanity and Techo, focusing on poverty alleviation through volunteer management and resource development. Emilio is currently the Executive Director of the Appropedia Foundation.
 
-* Adriana Cabrera
+* Adriana Cabrera:  is leader, together with Enrico Bassi, of the global FabCare group. She works as senior consultant in innovation and Product development at matrix GmbH & Co., as well as a researcher for FabLab Kamp- Lintfort, Germany, at the Rhine–Waal University of Applied Sciences. She is a global lecturer in the soft robotics field in the Fabricademy, part of the Academany advanced training programs offered by the FabFoundation. Adriana has collaborated in the Fab Lab community for many years by actively offering activities in the fields of fabrication for health care, smart textiles, and research materials in digital manufacturing, shown in the FabMaterials library. She has also participated in the exploration of prototyping in isolated environments with the MIT Design and Computation Group during the opening of FabLab Austral in the Chilean South Antarctic.
+
+
+Originally from Colombia, she works in diverse areas of design and tangible interaction. Having a background in industrial design, she complemented her studies with an MFA in Media Art and Design at Bauhaus University Weimar and later with an MA in Surface and Textile Design at the Weißensee Academy of Art Berlin, focusing on materials research. She is implementing sustainable experimentation by exploring new bio-inspired designs, including the impacts of today's prototyping.
+
+ 
