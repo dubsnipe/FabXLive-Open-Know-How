@@ -1,7 +1,7 @@
 # Using the Open Know-How Standard for evaluating COVID-19  medical projects
 ![Workshop banner](img/9.jpg)
-![Workshop banner](img/workshop.png)
 This is the workshop documentation for the 2020 FabXlive event.
+![Workshop banner](img/workshop.jpg)
 
 ## Contents
 - [Description](#Description)
@@ -43,7 +43,7 @@ Check if it's licensed. If not, you can leave this blank. Check https://spdx.org
 Your name and email will suffice.
 
 ### Download the manifest
-![Donwload](img/DB.png?raw=true)
+![Donwload](img/DB.jpg?raw=true)
 
 After you're done making the manifest, press "Download" and save it to your computer. You should have a file named okh.yml (you can rename it if you want).
 
