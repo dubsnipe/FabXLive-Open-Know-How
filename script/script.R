@@ -156,7 +156,7 @@ all_values <- left_join(all_nodes, values)
 all_values$value[is.na(all_values$value)] <- 5
 ## Add exponentiality just for sake of visualizing better.
 all_values <- all_values %>% 
-  mutate(x_value=case_when(group==2 ~5, TRUE ~ (value^1.9+value)))
+  mutate(x_value=case_when(group==2 ~5, TRUE ~ (value^1.6+value)))
 
 
 ## Make sure to eliminate projects without keywords.
@@ -184,7 +184,7 @@ network <- forceNetwork(
   Nodesize="x_value", 
   radiusCalculation="d.nodesize", 
   Group="group",
-  opacity=1, 
+  opacity=0.8, 
   zoom = T,
   fontFamily = "League Mono",
   colourScale = JS(ColourScale),
