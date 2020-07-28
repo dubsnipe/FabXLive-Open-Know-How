@@ -1,37 +1,38 @@
-title: Mask Armor
-description: Mask armor is a multipurpose and compact personal protection equipment (PPE).
-  It was designed to be used in conjunction with surgical masks, as well as
-  temporary mask storage to protect the user from COVID-19.
-intended-use: |-
-  3D printing
-  laser cutting
-keywords:
-  - 3D printed mask
-  - protection
-  - fab Device
-  - mask
-project-link: https://wikifactory.com/@dustin9710/mask-armor
-image: https://wikifactory.com/files/RmlsZTo0MDEyMDY=
-made: true
-made-independently: false
-license:
-  hardware: CC-BY-ND-4.0
-  documentation: CC-BY-NC-4.0
-  software: Apache-2.0
-okh-manifest-version: 1.0.0
-date-updated: 2020-07-27
-manifest-author:
-  name: Adriana Cabrera
-  affiliation: FabCare
-  email: adriana.cabrera.g@gmail.com
-design-files:
-  - null
-bom: Black 0.5mm Polypropylene (PP) sheet 3D Printing Anti-viral PLA filament
-  (Copper) 3D Printing TPU filament (Black) Clear 0.5mm PETG sheet Magnets
-  Superglue
-tool-list: "This design would use the laser cutting and 3D printing functions of the
-  Snapmaker 2.0. 3D Printing: Printing out the armor plates . Laser cutting:
-  Cutting out the PP and PETG sheets. Superglue: Glueing the armor plates and
-  magnets onto the base layer."
-making-instructions:
-  - null
+title: Mask Armor
+description: Mask armor is a multipurpose and compact personal protection equipment (PPE).
+  It was designed to be used in conjunction with surgical masks, as well as
+  temporary mask storage to protect the user from COVID-19.
+intended-use: |-
+  3D printing
+  laser cutting
+keywords:
+  - 3D printed mask
+  - protection
+  - fab Device
+  - mask
+  - covid19
+project-link: https://wikifactory.com/@dustin9710/mask-armor
+image: https://wikifactory.com/files/RmlsZTo0MDEyMDY=
+made: true
+made-independently: false
+license:
+  hardware: CC-BY-ND-4.0
+  documentation: CC-BY-NC-4.0
+  software: Apache-2.0
+okh-manifest-version: 1.0.0
+date-updated: 2020-07-27
+manifest-author:
+  name: Adriana Cabrera
+  affiliation: FabCare
+  email: adriana.cabrera.g@gmail.com
+design-files:
+  - null
+bom: Black 0.5mm Polypropylene (PP) sheet 3D Printing Anti-viral PLA filament
+  (Copper) 3D Printing TPU filament (Black) Clear 0.5mm PETG sheet Magnets
+  Superglue
+tool-list: "This design would use the laser cutting and 3D printing functions of the
+  Snapmaker 2.0. 3D Printing: Printing out the armor plates . Laser cutting:
+  Cutting out the PP and PETG sheets. Superglue: Glueing the armor plates and
+  magnets onto the base layer."
+making-instructions:
+  - null

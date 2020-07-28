@@ -40,7 +40,7 @@ new_filenames <- bind_cols(old=links$link, new=as.character(NA), title=as.charac
 ## Look for the title inside of the manifest. That is `new_title`. 
 ## Create a ´new_name´ for these files based off the title.
 for(i in 1:length(links$link)){
-  new_title <- gsub("title: ", "", readLines(manifests[i])[grepl("title: ", readLines(manifests[i]))])
+  new_title <- gsub("title: ", "", readLines(manifests[i])[grepl("^title: ", readLines(manifests[i]))])
   new_name <- paste0(
     "okh-",
     gsub("\\s+", "_", new_title),
@@ -118,7 +118,7 @@ manifest_single_keywords <- tibble(title=character(), keyword=character())
 for (i in 1:length(manifest_titles)) { 
   manifest_single_keywords <- bind_rows(manifest_single_keywords, 
                                         bind_cols(title=manifest_titles[i],
-                                                  keyword=yaml_list[[i]]$keywords))
+                                                  keyword=unlist(yaml_list[[i]]$keywords)) %>% select(title,keyword))
 }
 manifest_single_keywords <- drop_na(manifest_single_keywords)
 manifest_single_keywords$keyword <- tolower(manifest_single_keywords$keyword)

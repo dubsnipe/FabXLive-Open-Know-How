@@ -1,0 +1,50 @@
+title: FabLab U. de Chile Faceshield
+description: Based on the Prusa Face Shield initiative this in an EMERGENCY Face Shield.
+  The purpose of this design is to eliminate any further work on the parts decreasing the chance of contamination during the fabrication stage and for
+  direct assembly.
+intended-use: The face shield is meant to be used complementary with a N95 facial mask and
+  goggles, adding more protection.
+keywords:
+  - faceshield
+  - covid19
+  - pla
+  - 3d printer
+  - petg
+project-link: https://gitlab.com/fablab-u-de-chile/fabuchile-face-shield
+image: https://gitlab.com/fablab-u-de-chile/fabuchile-face-shield/-/raw/master/images/v4.jpg
+made: true
+made-independently: true
+license:
+  hardware: CC-BY-SA-4.0
+  documentation: CC-BY-SA-4.0
+licensor:
+  name: Gonzalo Olave
+  affiliation: FabLab U. de Chile
+  email: gonzalo@fablab.uchile.cl
+okh-manifest-version: 1.0.0
+date-created: 2020-07-28
+date-updated: 2020-07-28
+manifest-author:
+  name: Gonzalo Olave Wolff
+  affiliation: FabLab U. de Chile
+  email: gonzalo@fablab.uchile.cl
+contact:
+  name: Gonzalo Olave Wolff
+  affiliation: FabLab U. de Chile
+  email: gonzalo@fablab.uchile.cl
+contributors:
+  - name: Danisa Peric
+    affiliation: FabLab U. de Chile
+    email: danisa@fablab.uchile.cl
+version: "5.0"
+development-stage: prototype
+documentation-home: https://gitlab.com/fablab-u-de-chile/fabuchile-face-shield
+design-files:
+  - path: https://gitlab.com/fablab-u-de-chile/fabuchile-face-shield/-/tree/master/cad/v5
+    title: FabLab U. de Chile Faceshield v5.0
+bom: PLA
+tool-list: 3D Printer
+health-safety-notice: "Warning: This is not a certified medical device."
+derivative-of:
+  title: Prusa Faceshield RC3
+  web: https://www.prusaprinters.org/prints/25857-protective-face-shield-rc3
